@@ -1,5 +1,15 @@
-import '@/styles/globals.css'
+import { ChakraProvider } from '@chakra-ui/react'
+import '../components/body/galeria/galeria.css'
+import { ArenaProvider } from '@/context/arenaProvider';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <ArenaProvider>
+    <ChakraProvider>
+      <Component {...pageProps} />
+    </ChakraProvider>
+    </ArenaProvider>
+  )
 }
+
+export default MyApp;
