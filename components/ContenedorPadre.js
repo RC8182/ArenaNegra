@@ -6,19 +6,19 @@ import Footer from './footer/footer'
 
 export const ContenedorPadre = (props) => {
   return (
-    <div>
-        <Box minW={{base:'380px', lg:'1300'}}>
+    <Box >
+        <Box >
           <NavBar/>
         </Box>
-        <Box margin={'1%'}>
+        <Box>
           {props.children}
         </Box>
-        <Box minW={{base:'380px', lg:'1300'}}>
+        <Box >
           <Footer />
         </Box>
         <Box >
           <FootBar />
         </Box>
-    </div>
+    </Box>
   )
 }

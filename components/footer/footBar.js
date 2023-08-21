@@ -9,7 +9,7 @@ export const FootBar = () => {
 
   return (
     <Box 
-        bgGradient={'linear(to-t, rgb(179, 164, 149),rgb(244, 241, 237))'}
+        bg={'black'}
         px={4}
         pos={'fixed'} 
         overflow={'hidden'} 

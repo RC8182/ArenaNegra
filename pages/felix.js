@@ -7,17 +7,19 @@ import { Body } from '@/components/body/body'
 
 export default function Index1() {
   return (
-    <ContenedorPadre>
+    <Flex>
+      <ContenedorPadre>
+        <Seo 
+            title={'Restaruante en Los Abrigos | Arena Negra Restaurant'}
+            metaName={"description"}    
+            metaContent={'Restaurante típico canario donde comer el mejor pescado de nuestras costas'}
+            metaKey={'Desc'}
+            />
+        <Flex className='contenedor-body'>
+          <Body/>
+        </Flex>
+      </ContenedorPadre>
+    </Flex>
 
-    <Seo 
-        title={'Restaruante en Los Abrigos | Arena Negra Restaurant'}
-        metaName={"description"}    
-        metaContent={'Restaurante típico canario donde comer el mejor pescado de nuestras costas'}
-        metaKey={'Desc'}
-        />
-      <Flex className='contenedor-body'>
-      <Body/>
-      </Flex>
-    </ContenedorPadre>
   )
 }

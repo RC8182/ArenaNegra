@@ -51,7 +51,9 @@ export default function Footer() {
 
   return (
     <Box
-      bgGradient={'linear(to-b, rgb(179, 164, 149),rgb(244, 241, 237))'}
+      backgroundColor={'black'}
+      color={'white'}
+      w={'100%'}
       >
       <Container as={Stack} maxW={{base:'380px',lg:'7xl'}} py={10} justifyContent={'center'}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>

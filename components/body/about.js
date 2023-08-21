@@ -7,7 +7,7 @@ export const About = () => {
   const titulo= idioma.about.titulo;
   const texto= idioma.about.texto;
   return (
-    <Box bgGradient={'linear(to-b, rgb(179, 164, 149),rgb(244, 241, 237))'} w={'100%'}>
+    <Box backgroundColor={'black'} color={'white'} w={'100%'}>
     <Box margin={'5%'}>
       <Stack spacing={0} align={'center'}>
         <Heading id='sobre-nosotros'>{titulo}</Heading>

@@ -12,7 +12,7 @@ export const Testimonio = () => {
     const Users= idioma.resenias.usuarios;
 
     return (
-        <Box bgGradient={'linear(to-b, rgb(179, 164, 149),rgb(244, 241, 237))'} w={'100%'}>
+        <Box backgroundColor={'black'} color={'white'} w={'100%'}>
                 <Box margin={'5%'} >
                   <Stack spacing={0} align={'center'}>
                     <Heading>{titulo}</Heading>
@@ -21,8 +21,9 @@ export const Testimonio = () => {
                   <Stack
                     margin={'3%'}
                     direction={{ base: 'column', lg: 'row' }}
-                    spacing={{ base: 10, md: 4, lg: 10 }}>
-
+                    spacing={{ base: 10, md: 4, lg: 12 }}
+                    align={'center'}>
+                    
                     {Users.map((e,i)=>{
                         return(
                             <div key={i}>

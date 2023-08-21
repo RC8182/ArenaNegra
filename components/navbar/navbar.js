@@ -1,5 +1,6 @@
 import {
   Box,
+  Container,
   Flex,
   HStack,
   IconButton,
@@ -17,10 +18,10 @@ export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <>
-      <Box bgGradient={'linear(to-b, rgb(179, 164, 149),rgb(244, 241, 237))'} 
-            px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box backgroundColor={'black'} 
+            px={4}
+            w={'100%'} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}  textColor={'white'} >
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -56,12 +57,10 @@ export default function NavBar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ md: 'none' }} textColor={'white'}>
           <NavLink/>
           </Box>
         ) : null}
       </Box>
-
-    </>
   )
 }

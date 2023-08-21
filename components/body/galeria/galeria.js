@@ -11,7 +11,7 @@ export default function Galeria() {
   const titulo= idioma.galeria.titulo;
 
   return (
-    <Box bgGradient={'linear(to-b, rgb(179, 164, 149),rgb(244, 241, 237))'} w={'100%'}>
+    <Box backgroundColor={'black'} color={'white'} w={'100%'}>
     <Box margin={'5px'} >
       <Flex flexDir={'column'} 
         align={'center'}
