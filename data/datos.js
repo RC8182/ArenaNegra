@@ -23,9 +23,7 @@ export const datos=
             ]
         },
         portada:{
-            titulo: 'Arrocería - Restaurante Arena Negra',
-            subtitulo1: 'Restaurante en Los Abrigos',
-            subtitulo2:'Abierto hasta las 23:30hs',
+            titulo: 'Arena  Negra  Arrocería - Taberna Marinera',
         },
         resenias:{
             titulo:'Reseñas',
@@ -118,9 +116,7 @@ export const datos=
 
         },        
         portada:{
-            titulo: 'Arena Negra Restaurant',
-            subtitulo1: 'Restaurant in Los Abrigos ',
-            subtitulo2:'Open until 11:30 p.m.',
+            titulo: 'Arena  Negra  Arrocería - Taberna Marinera',
         },
         resenias:{
             titulo:'Reviews',

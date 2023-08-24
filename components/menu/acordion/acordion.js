@@ -1,18 +1,21 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex } from '@chakra-ui/react'
+import { Accordion, Box} from '@chakra-ui/react'
 import React from 'react'
 import { TipoProducto } from './tipo-producto'
 import { bebidas, comida, postres } from './productos'
+import { SubMenuAcordion } from './subMenuAcordion'
 
 
 export const Acordion = () => {
 
   return (
-    <Box 
-        border={'1px solid white'}
+    <Box
+      margin={'1%'} 
         w={'100vw'}>
-        <Accordion allowToggle>
-           <TipoProducto titulo={'Bebidas'} productos={bebidas} /> 
-           <TipoProducto titulo={'Paellas'} productos={comida} comentario={'Todos nuestros arroces son elaborados con arroz artezanal de la airifera valenciana del maestro agricultor Rafaél Mañez'} />
+        <Accordion defaultIndex={[]} allowMultiple>
+           <SubMenuAcordion titulo={'Bebidas'} submenu={[ <SubMenuAcordion titulo={'Refrescos'}  />,
+           <SubMenuAcordion titulo={'Vinos Tinto'}  />,
+           <SubMenuAcordion titulo={'Vinos Blanco'} />]}/> 
+           <SubMenuAcordion titulo={'Paellas'} productos={comida} comentario={'Todos nuestros arroces son elaborados con arroz artezanal de la airifera valenciana del maestro agricultor Rafaél Mañez'} />
            <TipoProducto titulo={'Postres'} productos={postres} />
         </Accordion>
     </Box>

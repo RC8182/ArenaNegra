@@ -1,21 +1,21 @@
 import React from 'react'
 import { Box, Flex } from '@chakra-ui/react'
 export const Parallax = (props) => {
-    const imgV= props.imgv;
-    const imgH= props.imgh;
-    const titulo=props.titulo;
+    const imgV= props?.imgv;
+    const imgH= props?.imgh;
+    const titulo=props?.titulo;
   return (
     <Box w={'100%'}>
         <Box 
-        className='fondo' 
-        minW={{base:'400px', lg:'100vw'}}
-        minH={{base:'600px', lg:'600px'}}
-        position={'relative'}
-        backgroundImage={{base:`url(${imgV.src})`,lg:`url(${imgH.src})`}}
-        backgroundAttachment={'fixed'}
-        backgroundPosition={'center'}
-        backgroundRepeat={'no-repeat'}
-        backgroundSize={'cover'}>
+          className='fondo' 
+          minW={{base:'400px', lg:'100vw'}}
+          minH={{base:'600px', lg:'600px'}}
+          position={'relative'}
+          backgroundImage={{base:`url(${imgV.src})`,lg:`url(${imgH.src})`}}
+          backgroundAttachment={'fixed'}
+          backgroundPosition={'center'}
+          backgroundRepeat={'no-repeat'}
+          backgroundSize={'cover'}>
             <Box 
                 className='contenedor-titulo'
                 position={'absolute'}

@@ -3,7 +3,7 @@ import React from 'react'
 
 export const TipoProducto = (props) => {
     const titulo= props.titulo;
-    const productos= props.productos;
+    const productos= props?.productos;
     const comentario= props?.comentario;
 
   return (
@@ -13,12 +13,12 @@ export const TipoProducto = (props) => {
         <Box as="span" flex='1' textAlign='center' color={'white'}>
         {titulo}
         </Box>
-        <AccordionIcon />
+        <AccordionIcon color={'blue'} />
     </AccordionButton>
     </h2>
    
     {
-      productos.map((e)=>{
+      productos?.map((e)=>{
         return e
       })
     }

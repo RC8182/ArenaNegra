@@ -1,71 +1,69 @@
-import { Box, Flex } from '@chakra-ui/react'
 import React, { useContext } from 'react'
-import Image from 'next/image'
-import { ArenaContex } from '@/context/arenaProvider';
-import { Reservar } from '../botones/reservas';
+import { Box, Flex } from '@chakra-ui/react'
+import v1 from '../../public/images/tinta.jpg'
+import h1 from '../../public/images/tinta.jpg'
+import { Reservar } from '../botones/reservas'
+import { Logo } from '../logo'
+import { ArenaContex } from '@/context/arenaProvider'
 
-const Portada = () => {
+export const Portada = () => {
     const  {idioma}= useContext(ArenaContex)
     const titulo= idioma.portada.titulo
-    const sub1= idioma.portada.subtitulo1
-    const sub2= idioma.portada.subtitulo2
   return (
-    <Box backgroundColor={'black'}
-        color={'white'} w={'100%'}>
-    
-        <div
-            margin={'auto'}
-            className='contenedor-foto-portada'
-            height={'640px'}
-            // max={{base:'400px', lg:'7xl'}}
-            >
-            {/* <div position={'relative'}
-                left= {0}
-                top= {'25%'}
-                width= {'100%'}
-                text-align= {'center'}
-                background-color={'aqua'} 
-                color= {'antiquewhite'}
-                padding= {'18px'}
-                font-size= {'25px'}>
-                <h1> {titulo}</h1>
-                <div                 
-                background-color={'aqua'} 
-                color= {'antiquewhite'}
-                padding= {'18px'}
-                font-size= {'25px'}>
-                    
-                </div>
-                
-            </div> */}
-            
-            <Image
-                src={require("../../public/images/collagearena.png")}
-                alt="Picture of the author"
-                width="100%" height="100%" layout="responsive" objectFit="contain"
-                />
-        </div>
+    <Box w={'100%'}>
+        <Box 
+        className='fondo' 
+        minW={{base:'400px', lg:'100vw'}}
+        minH={{base:'600px', lg:'600px'}}
+        position={'relative'}
+        backgroundImage={{base:`url(${v1.src})`,lg:`url(${h1.src})`}}
+        backgroundAttachment={'fixed'}
+        backgroundPosition={'center'}
+        backgroundRepeat={'no-repeat'}
+        backgroundSize={'cover'}>
+            <Box 
+                className='contenedor-titulo'
+                position={'absolute'}
+                left={0}
+                top={0}
+                width={'100%'}
+                height={'100%'}
+                backgroundColor={'rgba(44, 42, 42, 0.527)'}
+                textAlign={'center'}>
+                <Flex flexDir={'column'}>
+                    <Flex 
+                    margin={'3%'}
+                    className='titulo'
+                    justifyContent={'center'}
+                    color={'white'}
+                    padding={'18px'}
+                    fontSize={'25px'}
+                    flexDir={'column'}
+                    letterSpacing={'10px'}
+                    >
+                    <h1>{titulo}</h1>
+                    </Flex>
+
+                    <Flex flexDir={'column'}>
+                        <Reservar />
+                    </Flex>
+
+                    <Logo width={'150px'}/>
+                </Flex>
+
+            </Box>
+        </Box>
 
         <Flex
-            flexDir={'column'}
-            margin={'3%'} 
-            >
+             className='seccion'
+             height={'auto'}
+             alignItems={'center'}
+             justifyContent={'center'}
+             padding={'0 20'}
+             >
 
-            <Flex 
-                fontSize={{base:'xl', lg:'2xl'}}
-                justifyContent={'center'}>
-                <Flex flexDir={'column'}>
-                    <h2 >{sub1}</h2>
-                    <h2 >{sub2}</h2>
-                </Flex>
-            </Flex>
-
-            <Reservar />
         </Flex>
-                
-    </Box>
         
+    </Box>
   )
 }
-
-export default Portada
