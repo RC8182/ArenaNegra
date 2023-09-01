@@ -4,6 +4,7 @@ import { Box, Flex } from '@chakra-ui/react'
 import { Acordion } from '@/components/menu/acordion/acordion'
 import Image from 'next/image'
 import img from '../public/images/logoArena.jpg'
+import Link from 'next/link'
 
 export default function Menu(){
 
@@ -16,7 +17,7 @@ export default function Menu(){
     flexDir={'column'}>
 
         <Flex>
-
+            <Link href={'/'}>
             <Flex
                 className='logo'
                 margin={'5%'}
@@ -33,8 +34,9 @@ export default function Menu(){
                 margin={'1%'}
                 textAlign={'center'}
                 fontSize={'2xl'}>
-                <h1>Arena Negra Restautante - Arrocería</h1>
+                <h1>Arena  Negra  Arrocería - Taberna Marinera</h1>
             </Flex>
+            </Link>
         </Flex>
 
         <Flex
@@ -42,7 +44,7 @@ export default function Menu(){
             margin={'2%'}
             color={'white'}
             justifyContent={'center'}
-            fontSize={'2xl'}>
+            fontSize={'6xl'}>
             <h3>Menu</h3>
         </Flex>
 

@@ -1,3 +1,5 @@
+import paella from '../public/images/tinta.jpg'
+import tabla from '../public/images/tablaPescado.png'
 export const datos=
 {
     esp:{
@@ -23,7 +25,25 @@ export const datos=
             ]
         },
         portada:{
-            titulo: 'Arena  Negra  Arrocería - Taberna Marinera',
+            h2: 'Bienvenidos a Arena Negra',
+            h1:' Arrocería restaurante en Los Abrigos'
+        },
+        especialidades:{
+            titulo:'Nuestras Especialidades',
+            productos:[
+                {
+                    img: paella,
+                    alt:'Imagen de una paella',
+                    titulo:'Arroces / Paellas',
+                    texto: 'Nuestros Arroces: Paella Valenciana, Arroz Caldoso de Bogavantes, Arroz de mariscos, Arroz Negro de Pulpo y Fideuá',
+                },
+                {
+                    img: tabla,
+                    alt:'Imagen de una tabla de pescado',
+                    titulo:'Tablas de Pescado',
+                    texto: 'Tabla de pescado compuestas por: Chopitos, Gambas al ajillo, Calamares, Mejillones y el Pescado del día',
+                }
+            ],
         },
         resenias:{
             titulo:'Reseñas',
@@ -52,7 +72,7 @@ export const datos=
         },
         about:{
             titulo:'Sobre Nosotros',
-            texto:'Ipsum sunt culpa ullamco laborum exercitation eu laborum pariatur est ipsum sunt. Dolor nulla reprehenderit quis exercitation id tempor. Sit proident esse ea velit commodo tempor consequat mollit consectetur enim aute. Nisi adipisicing anim ipsum ad. Non incididunt proident cupidatat aliquip duis ea commodo. Eiusmod fugiat magna qui ut ad tempor ad cupidatat ea ut nulla excepteur enim reprehenderit.'
+            texto:'Somos una familia apasionada por el mundo de la restauración. En Arena Negra Restaurant estamos comprometidos en brindar calidad y servicio a nuestros clientes. Detrás de esta familia contamos con un maravilloso equipo humano entre los que se encuentran: Tomás, Miguel, Dino, Claudia y Javier en sala. Y en cocina: Felix, Yuri y nuestro Chef internacional Aday Martín. Un equipo inmejorable en el que cada uno aporta su experiencia para que la gestión de cocina, servicio, compras y elaboración del producto se encuentre siempre a la altura del cliente.'
 
         },
         galeria:{
@@ -61,12 +81,12 @@ export const datos=
         pie:{
             contacto:{
                 titulo:'Contacto',
-                tel: 'Teléfono: 822 12 61 84'
+                tel: 'Teléfono: +34 648 416 513'
             },
             direccion:{
                 titulo:'Dirección',
                 dir:'Paseo Marítimo',
-                dir1:'Local 3',
+                dir1:'Local 32',
                 dir2: '38618 Los Abrigos',
                 dir3: 'Santa Cruz de Tenerife'
             },
@@ -116,7 +136,26 @@ export const datos=
 
         },        
         portada:{
-            titulo: 'Arena  Negra  Arrocería - Taberna Marinera',
+            h2: 'Welcome to Arena Negra',
+            h1:' Arrocería restaurant in Los Abrigos'
+
+        },
+        especialidades:{
+            titulo:'Our specialties',
+            productos:[
+                {
+                    img: paella,
+                    alt:'Imagen de una paella',
+                    titulo:'Image of a paella',
+                    texto: 'Our Rice: Valencian Paella, Soupy Lobster Rice, Seafood Rice, Black Octopus Rice and Fideuá',
+                },
+                {
+                    img: tabla,
+                    alt:'Image of a fish table',
+                    titulo:'Fish table',
+                    texto: 'Fish table made up of: Baby squid, garlic prawns, squid, mussels and the fish of the day',
+                }
+            ],
         },
         resenias:{
             titulo:'Reviews',
@@ -145,7 +184,7 @@ export const datos=
         },
         about:{
             titulo:'About Us',
-            texto:'Ipsum sunt culpa ullamco laborum exercitation eu laborum pariatur est ipsum sunt. Dolor nulla reprehenderit quis exercitation id tempor. Sit proident esse ea velit commodo tempor consequat mollit consectetur enim aute. Nisi adipisicing anim ipsum ad. Non incididunt proident cupidatat aliquip duis ea commodo. Eiusmod fugiat magna qui ut ad tempor ad cupidatat ea ut nulla excepteur enim reprehenderit.'
+            texto:"We are a family passionate about the world of restoration. At Arena Negra Restaurant we are committed to providing quality and service to our customers. Behind this family we have a wonderful human team among which are: Tomás, Miguel, Dino, Claudia and Javier in the room.  And in the kitchen: Felix, Yuri and our international Chef Aday Martín.An unbeatable team in which each one contributes their experience so that the management of the kitchen, service, purchases and preparation of the product is always at customer level."
 
         },
         galeria:{
@@ -154,12 +193,12 @@ export const datos=
         pie:{
             contacto:{
                 titulo:'Contact Us',
-                tel: 'Phone:  822 12 61 84'
+                tel: 'Phone:  +34 648 416 513'
             },
             direccion:{
                 titulo:'Address',
                 dir:'Paseo Marítimo',
-                dir1:'Local 3',
+                dir1:'Local 32',
                 dir2: '38618 Los Abrigos',
                 dir3: 'Santa Cruz de Tenerife'
             },

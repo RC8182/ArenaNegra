@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 
 export default function ProductSimple(props) {
-    const img= props.img;
+    const img= props?.img;
     const nombre= props.nombre;
     const precio= props.precio;
     const extra= props?.extra;
@@ -44,7 +44,7 @@ export default function ProductSimple(props) {
           <Image
                 src={img}
                 alt="Picture of the author"
-                width="100%" height="100%" layout="responsive" objectFit="cover"
+                // width="100%" height="100%" layout="responsive" objectFit="cover"
           />
           </Box>
 

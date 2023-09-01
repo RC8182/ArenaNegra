@@ -8,6 +8,7 @@ import h1 from '../../public/images/tinta.jpg'
 import v2 from '../../public/images/paellas.jpg'
 import h2 from '../../public/images/collagearena.png'
 import { Portada } from './portada'
+import { Especialidades } from './especialidades/especialidades'
 export const Body = () => {
 
   return (
@@ -16,12 +17,9 @@ export const Body = () => {
         <Portada/>
         </Flex> 
 
-        {/* <Flex>
-          <Parallax imgv={v1} imgh={h1} titulo={'Paella tinta calamares'}/>
-        </Flex>  
-        <Flex>
-          <Parallax imgv={v2} imgh={h2} titulo={'Paella Valenciana'}/>
-        </Flex>         */}
+        <Flex marginTop={'1%'}>
+          <Especialidades/>
+        </Flex>
 
         <Flex marginTop={'1%'}>
           <Testimonio/>

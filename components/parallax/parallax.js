@@ -15,7 +15,7 @@ export const Parallax = (props) => {
           backgroundAttachment={'fixed'}
           backgroundPosition={'center'}
           backgroundRepeat={'no-repeat'}
-          backgroundSize={'cover'}>
+          backgroundSize={'contain'}>
             <Box 
                 className='contenedor-titulo'
                 position={'absolute'}

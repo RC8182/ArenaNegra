@@ -41,20 +41,19 @@ export default function Footer() {
       w={'100%'}
       >
       <Container as={Stack} maxW={{base:'380px',lg:'7xl'}} py={10} justifyContent={'center'}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
-          <Stack id='contacto' align={'center'}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}  margin={'5%'}>
+          <Stack id='contacto' align={'flex-start'}>
             
             <ListHeader >{contacto.titulo}</ListHeader>
             <Box className='telefono'>
                 <h2>{contacto.tel}</h2>
             </Box>
-
-            <Flex className='boton-llamar'>
-                <Llamar phone={+34648416513}/>
-            </Flex>
+            <Box className='email'>
+                <h2>restarenanegra@gmail.com</h2>
+            </Box>
 
           </Stack>
-          <Stack align={'center'}>
+          <Stack align={'flex-start'}>
             <ListHeader>{direccion.titulo}</ListHeader>
             <Flex className='direccion'
             flexDir={'column'}>
@@ -63,11 +62,8 @@ export default function Footer() {
                 <h2>{direccion.dir2}</h2>
                 <h2>{direccion.dir3}</h2>
             </Flex>
-            <Flex className='boton-como-llegar'>
-              <Direccion/>
-            </Flex>
           </Stack>
-          <Stack align={'center'}>
+          <Stack align={'flex-start'}>
             <ListHeader>{horario.titulo}</ListHeader>
             <Flex>
         <UnorderedList>
@@ -81,13 +77,13 @@ export default function Footer() {
         </UnorderedList>
         </Flex>
           </Stack>
-          <Stack align={'center'}>
+          <Stack align={'flex-start'}>
             <ListHeader>{siguenos.titulo}</ListHeader>
-            <Box as="a" href={'https://www.facebook.com/profile.php?id=100076500755574'}>
+            <Box as="a" href={'https://www.facebook.com/profile.php?id=61550354287185'}>
               Facebook
             </Box>
 
-            <Box as="a" href={'https://www.instagram.com/arenanegralosabrigos/'}>
+            <Box as="a" href={'https://www.instagram.com/arenanegrarestaurant/'}>
               Instagram
             </Box>
             <Box as="a" href={'https://www.tripadvisor.es/Restaurant_Review-g1188716-d23657993-Reviews-Restaurente_Arena_Negra_Taberna_BBQ-Los_Abrigos_Tenerife_Canary_Islands.html'}>

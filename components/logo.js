@@ -12,7 +12,7 @@ export const Logo = (props) => {
     <Image
         src={require("../public/images/logoArena.jpg")}
         alt="Picture of the author"
-        width="100%" height="100%" layout="responsive" objectFit="contain"
+        // width="100%" height="100%" layout="responsive" objectFit="contain"
         />
 </Flex>
   )
