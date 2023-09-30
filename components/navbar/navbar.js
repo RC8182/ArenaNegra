@@ -40,7 +40,7 @@ export default function NavBar() {
 
           <Flex >
                 <HStack display={{ base: 'none', md: 'flex' }} margin={'1%'}>
-                  <Llamar phone={+34648416513}/>
+                  <Llamar phone={+34677397592}/>
                 </HStack>
                 <HStack display={{ base: 'none', md: 'flex' }} margin={'1%'}>
                   <Direccion />

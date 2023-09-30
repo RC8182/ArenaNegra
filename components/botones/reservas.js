@@ -8,8 +8,8 @@ export const Reservar = () => {
   return (
     <Button border={'1px black solid'}>
     {(idioma === datos.esp)?
-      <Link href={`https://api.whatsapp.com/send/?phone=34648416513`} isExternal>Reservar</Link>
-      : <Link href={`https://api.whatsapp.com/send/?phone=34648416513`} isExternal>Book a Table</Link>
+      <Link href={`https://api.whatsapp.com/send/?phone=34677397592`} isExternal>Reservar</Link>
+      : <Link href={`https://api.whatsapp.com/send/?phone=34677397592`} isExternal>Book a Table</Link>
     }
   </Button>
   )

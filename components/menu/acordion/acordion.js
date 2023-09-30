@@ -14,34 +14,40 @@ export const Acordion = () => {
         <Accordion defaultIndex={[]} allowMultiple>
 
           <SubMenuAcordion titulo={'Bebidas'} submenu={[
-          <MenuAcordion titulo={'Refrescos'} menu={refrescos}/>,
-          <MenuAcordion titulo={'Vino Tinto'} menu={vinoTinto}/>,
-          <MenuAcordion titulo={'Vino Blanco'} menu={vinoBlanco}/>,
-          <MenuAcordion titulo={'Bebidas Alcoholicas'} menu={bebidasAlcoholicas}/>,
-          <MenuAcordion titulo={'Cocktais'} menu={cocktails}/>,
+          <MenuAcordion titulo={'Refrescos'} menu={['']}/>,
+          <MenuAcordion titulo={'Cervezas'} menu={['']}/>,
+          <MenuAcordion titulo={'Vinos'} menu={['']}/>,
+          <MenuAcordion titulo={'Sangria'} menu={['']}/>,
+          <MenuAcordion titulo={'Cocktais'} menu={['']}/>,
+          <MenuAcordion titulo={'Gin'} menu={['']}/>,
+          <MenuAcordion titulo={'Vodka'} menu={['']}/>,
+          <MenuAcordion titulo={'Ron'} menu={['']}/>,
+          <MenuAcordion titulo={'Brandi'} menu={['']}/>,
+          <MenuAcordion titulo={'Wisky'} menu={['']}/>,
+          <MenuAcordion titulo={'Licores'} menu={['']}/>,
           <MenuAcordion titulo={'Cafe'} menu={cafe}/>,]} />
 
           <SubMenuAcordion titulo={'Comida'} submenu={[
             <SubMenuAcordion titulo={'Entrantes'} submenu={[
-              <MenuAcordion titulo={'Crudos'} menu={refrescos}/>,
-              <MenuAcordion titulo={'Ensaladas'} menu={vinoTinto}/>,
-              <MenuAcordion titulo={'Guarniciones'} menu={vinoBlanco}/>,
-              <MenuAcordion titulo={'Raciones'} menu={vinoBlanco}/>,]} />,
+              <MenuAcordion titulo={'Crudos'} menu={['']}/>,
+              <MenuAcordion titulo={'Ensaladas'} menu={['']}/>,
+              <MenuAcordion titulo={'Guarniciones'} menu={['']}/>,
+              <MenuAcordion titulo={'Raciones'} menu={['']}/>,]} />,
 
-              <MenuAcordion titulo={'Arroces'} menu={arroces}/>,
+              <MenuAcordion titulo={'Paellas'} menu={arroces}/>,
 
               <SubMenuAcordion titulo={'Tabla Pescado'} submenu={[
-              <MenuAcordion titulo={'Tabla 25'} menu={refrescos}/>,
-              <MenuAcordion titulo={'Tabla 30'} menu={vinoTinto}/>,
+              <MenuAcordion titulo={'Tabla 25'} menu={['']}/>,
+              <MenuAcordion titulo={'Tabla 30'} menu={['']}/>,
               ]} />,
-              <MenuAcordion titulo={'Pasta'} menu={arroces}/>,
-              <MenuAcordion titulo={'Hamburguesa'} menu={arroces}/>,
-              <MenuAcordion titulo={'Pescado'} menu={arroces}/>,
-              <MenuAcordion titulo={'Menu del día'} menu={arroces}/>,
-              <MenuAcordion titulo={'Menu Infantil'} menu={arroces}/>,
+              <MenuAcordion titulo={'Pasta'} menu={['']}/>,
+              <MenuAcordion titulo={'Hamburguesa'} menu={['']}/>,
+              <MenuAcordion titulo={'Pescado'} menu={['']}/>,
+              <MenuAcordion titulo={'Menu del día'} menu={['']}/>,
+              <MenuAcordion titulo={'Menu Infantil'} menu={['']}/>,
               ]} />
 
-          <MenuAcordion titulo={'Postres'} menu={postres}/>
+          <MenuAcordion titulo={'Postres'} menu={['']}/>
           
    
 

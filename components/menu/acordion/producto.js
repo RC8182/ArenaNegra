@@ -7,8 +7,12 @@ import {
   Text,
   Stack,
   AccordionPanel,
+  Divider,
+  Flex,
+  Card,
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import { Alergenos } from "../alergenos/alergenos";
 
 
 
@@ -18,11 +22,12 @@ export default function ProductSimple(props) {
     const precio= props.precio;
     const extra= props?.extra;
     const descripcion =props?.descripcion;
+    const alergenos=props?.alergenos;
 
   return (
     <AccordionPanel pb={4}>
     <Center py={12}>
-      <Box
+      <Card
         role={'group'}
         p={6}
         maxW={'330px'}
@@ -37,8 +42,9 @@ export default function ProductSimple(props) {
           rounded={'lg'}
           mt={-12}
           pos={'relative'}
-          height={'230px'}
-          backgroundImage={`url(${bg.src})`}>
+          
+          // backgroundImage={`url(${bg.src})`}
+          >
           <Box margin={'2%'}
           padding={'1%'}>
           <Image
@@ -49,24 +55,34 @@ export default function ProductSimple(props) {
           </Box>
 
         </Box>
-        <Stack pt={10} align={'center'}>
+        <Stack pt={5} align={'center'} margin={'5%'}>
 
-          <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500} textTransform={'uppercase'} textAlign={'center'}>
+          <Heading fontSize={'md'} textTransform={'uppercase'}>
            {nombre}
           </Heading>
           <Text color={'gray.500'} fontSize={'sm'} >
             {descripcion}
           </Text>
-          <Stack direction={'row'} align={'center'}>
-            <Text fontWeight={800} fontSize={'xl'}>
+
+        </Stack>
+        <Divider />
+        <Stack direction={'row'} align={'center'}>
+          <Flex flex={'20%'}>
+            <Text fontWeight={800} fontSize={'sm'}>
               { precio + ' €'}
             </Text>
-            <Text color={'gray.600'}>
+          </Flex>
+          <Flex flex={'70%'}>
+          <Text color={'gray.600'}>
              {extra}
             </Text>
-          </Stack>
+          </Flex>
         </Stack>
-      </Box>
+        <Divider />  
+        <Flex justifyContent={'flex-end'} margin={'5%'}>
+          <Alergenos alergenos={alergenos}/>
+        </Flex>
+      </Card>
     </Center>
     </AccordionPanel>
   )
