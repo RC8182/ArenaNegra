@@ -81,7 +81,7 @@ export const datos=
         pie:{
             contacto:{
                 titulo:'Contacto',
-                tel: 'Teléfono: +34 677 39 75 92'
+                tel: 'Teléfono: +34 648 416 513'
             },
             direccion:{
                 titulo:'Dirección',
@@ -193,7 +193,7 @@ export const datos=
         pie:{
             contacto:{
                 titulo:'Contact Us',
-                tel: 'Phone:  +34 677 39 75 92'
+                tel: 'Phone:  +34 648 416 513'
             },
             direccion:{
                 titulo:'Address',

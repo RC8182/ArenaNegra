@@ -17,7 +17,7 @@ export const FootBar = () => {
         w={'100%'}>
         <Flex flexDir={'row'}>
             <HStack display={{ base: 'flex', md: 'none' }} w={'33%'} justifyContent={'flex-start'}>
-            <Llamar phone={+34677397592}/>
+            <Llamar phone={+34648416513}/>
             </HStack>
             <HStack display={{ base: 'flex', md: 'none' }} w={'33%'} justifyContent={'center'}>
             <Direccion />
