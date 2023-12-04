@@ -1,18 +1,17 @@
 import { Box, Flex, Heading, } from "@chakra-ui/react";
-import  { Slide } from "./slide";
 import { ArenaContex } from "@/context/arenaProvider";
 import { useContext } from "react";
 import { Parallax } from "@/components/parallax/parallax";
-import imgV from '../../../public/images/1.jpg'
-import imgH from '../../../public/images/1.jpg'
-import imgV1 from '../../../public/images/3.jpg'
-import imgH1 from '../../../public/images/3.jpg'
-import imgV2 from '../../../public/images/4.jpg'
-import imgH2 from '../../../public/images/4.jpg'
-import imgV3 from '../../../public/images/9.jpg'
-import imgH3 from '../../../public/images/9.jpg'
-import imgV4 from '../../../public/images/6.jpg'
-import imgH4 from '../../../public/images/6.jpg'
+import imgV from '../../../public/images/800/gentealmorzando.jpg'
+import imgH from '../../../public/images/1460/gentealmorzando.jpg'
+import imgV1 from '../../../public/images/800/cocktails.jpg'
+import imgH1 from '../../../public/images/1460/cocktails.jpg'
+import imgV2 from '../../../public/images/800/ginTonic.jpg'
+import imgH2 from '../../../public/images/1460/ginTonic.jpg'
+import imgV3 from '../../../public/images/800/vistas.jpg'
+import imgH3 from '../../../public/images/1460/vistas.jpg'
+import imgV4 from '../../../public/images/800/caption.jpg'
+import imgH4 from '../../../public/images/1460/caption.jpg'
 
 export default function Galeria() {
 
